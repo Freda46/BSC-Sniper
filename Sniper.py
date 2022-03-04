@@ -66,11 +66,11 @@ class SniperBot():
         print(style().GREEN + "Await Blocks :",style().YELLOW + str(self.wb)+ style().RESET)
 
         if self.tsl != 0:
-            print(style().YELLOW + "Trailing Stop loss Percent :",style().GREEN + str(self.tsl)+ style().RESET)
+            print(style().GREEN + "Trailing Stop loss Percent :",style().YELLOW + str(self.tsl)+ style().RESET)
         if self.tp != 0:
-            print(style().YELLOW + "Take Profit % :",style().GREEN + str(self.tp)+ style().RESET)
+            print(style().GREEN + "Take Profit % :",style().YELLOW + str(self.tp)+ style().RESET)
         if self.sl != 0:
-            print(style().YELLOW + "Stop loss % :",style().GREEN + str(self.sl)+ style().RESET)
+            print(style().GREEN + "Stop loss % :",style().YELLOW + str(self.sl)+ style().RESET)
         print(style().BLUE + "---------------------------------"+ style().RESET)
         
     def parseArgs(self):
