@@ -7,12 +7,12 @@ from style import style
 ascii = """
 
  _______  _______ __________________ _______  _______ 
-(  ____ )(  ___  )\__   __/\__   __/(  ____ \(  ____ \
+(  ____ )(  ___  )\__   __/\__   __/(  ____ \(  ____ |
 | (    )|| (   ) |   ) (      ) (   | (    \/| (    \/
 | (____)|| (___) |   | |      | |   | |      | (__    
 |  _____)|  ___  |   | |      | |   | |      |  __)   
 | (      | (   ) |   | |      | |   | |      | (      
-| )      | )   ( |   | |   ___) (___| (____/\| (____/\
+| )      | )   ( |   | |   ___) (___| (____/\| (____/|
 |/       |/     \|   )_(   \_______/(_______/(_______/
                                                       
  _______  _       _________ _______  _______  _______ 
@@ -55,15 +55,15 @@ class SniperBot():
         return settings
 
     def SayWelcome(self):
-        print(style().YELLOW + ascii+ style().RESET)
-        print(style().GREEN +"""Attention, You pay a 0.7% Tax on your swap amount!"""+ style().RESET)
-        print(style().GREEN +"Start Sniper Tool with following arguments:"+ style().RESET)
+        print(style().RED + ascii+ style().RESET)
+        print(style().RED +"""Danger of fake tools with ransomware!!! Make sure you use the original tools, contact me Telegram @patice"""+ style().RESET)
+        print(style().YELLOW +"Start Sniper Tool with following arguments:"+ style().RESET)
         print(style().BLUE + "---------------------------------"+ style().RESET)
-        print(style().YELLOW + "Buy Amount:",style().GREEN + str(self.amount) + " BNB"+ style().RESET)
-        print(style().YELLOW + "Token CA :",style().GREEN + str(self.token) + style().RESET)
-        print(style().YELLOW + "Transaction to send:",style().GREEN + str(self.tx)+ style().RESET)
-        print(style().YELLOW + "Amount per transaction :",style().GREEN + str("{0:.8f}".format(self.amountForSnipe))+ style().RESET)
-        print(style().YELLOW + "Await Blocks :",style().GREEN + str(self.wb)+ style().RESET)
+        print(style().GREEN + "Buy Amount:",style().YELLOW + str(self.amount) + " BNB"+ style().RESET)
+        print(style().GREEN + "Token CA :",style().YELLOW + str(self.token) + style().RESET)
+        print(style().GREEN + "Transaction to send:",style().YELLOW + str(self.tx)+ style().RESET)
+        print(style().GREEN + "Amount per transaction :",style().YELLOW + str("{0:.8f}".format(self.amountForSnipe))+ style().RESET)
+        print(style().GREEN + "Await Blocks :",style().YELLOW + str(self.wb)+ style().RESET)
 
         if self.tsl != 0:
             print(style().YELLOW + "Trailing Stop loss Percent :",style().GREEN + str(self.tsl)+ style().RESET)
