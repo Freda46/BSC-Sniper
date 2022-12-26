@@ -1,1 +1,1 @@
-# beta
+# BSC Sniper Bot PancakeSwap
